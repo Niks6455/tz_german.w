@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+} 
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+} 
+
+// стили для кнопки
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hamburger-button{
+  .bar:nth-child(2){
+    width: 18px;
+    margin-left: 15px;
+  }
+}
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #CD3B31;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger-button.open{
+  .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
