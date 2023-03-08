@@ -1,0 +1,31 @@
+.search__container {
+    box-shadow: 0px 1px 10px 0px #C4C4C4; 
+    display: flex;
+    align-items: center; 
+    border-radius: 25px;
+    height: 38px;
+    input[type="text"] {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 15px;  
+      border-radius: 25px 0px 0px 25px;
+      height: 38px; 
+      
+    }
+    input::placeholder{
+      color: #C4C4C4;
+    }
+  .search__icon {
+    border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 19px;
+      height: 19px;
+      border-radius: 0px 25px 25px 0px;
+      background-color: #ffffff; 
+    }
+  }
+  

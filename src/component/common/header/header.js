@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from'./header.module.scss'
 import logo from "./../../img/лого.png"
+import Search from '../../ui/search/Search';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +9,10 @@ const Header = () => {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  console.log(isMenuOpen);
+
+  function handleSearch(searchTerm) {
+    console.log("Search term: ", searchTerm);
+  }
 
   return (
     <header>
@@ -40,10 +44,13 @@ const Header = () => {
                 </a>
             </div>
 
-            <div className={styles.poisk}></div>
+          <div className={styles.search}>
+              <Search onSearch={handleSearch}/>
+          </div>
+        
         
 
-            <button className={`hamburger-button ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuClick}>
+            <button className={`hamburger__button ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuClick} >
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
