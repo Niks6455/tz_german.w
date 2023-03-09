@@ -1,12 +1,13 @@
 import React from "react"
 import styles from "./footer.module.scss"
-import img__logo from "./../../img/лого2.png"
-import img__vk from "./../../img/вк.png"
-import img__tel from "./../../img/телега.png"
+import img__logo from "./../../img/logo/лого2.png"
+import img__vk from "./../../img/icon/вк.png"
+import img__tel from "./../../img/icon/телега.png"
 import Search from "../../ui/search/Search"
 
 
 export default function Footer() {
+    
     function handleSearch(searchTerm) {
         console.log("Search term: ", searchTerm);
       }
@@ -20,32 +21,33 @@ export default function Footer() {
               
                 <div className={styles.list__container}>
                      <ul >          
-                        <li> Магазины </li> 
-                        <li> Кафе и рестораны </li>
-                        <li> Услуги и сервисы </li>
-                        <li> Развлечения </li>
+                        <li>  Магазины </li> 
+                        <li>  Кафе и рестораны </li>
+                        <li>  Услуги и сервисы </li>
+                        <li>  Развлечения</li>
+                    </ul> 
+                    <ul> 
+                        <li>  О нас </li>
+                        <li>  События </li>  
+                        <li>  Галерея </li>
+                    </ul> 
+                        
+                    <ul> 
+                        <li>  Контакты </li>
+                        <li>  Аренда</li>
+                        <li>  Вакансии </li>
                     </ul>
                     <ul>
-                        <li> О нас </li>
-                        <li> События </li>  
-                        <li> Галерея </li>
-                    </ul>
-                       
-                    <ul>
-                        <li> Контакты </li>
-                        <li> Аренда </li>
-                        <li> Вакансии </li>
-                    </ul>
-                    <ul>
-                          <li> Тендеры </li> 
-                          <li> Политика конфиденциальности </li> <li> Карта ТЦ </li> 
+                          <li>  Тендеры </li> 
+                          <li>  Политика конфиденциальности </li> 
+                          <li>  Карта ТЦ </li> 
                     </ul> 
                 </div>
                 <div className={styles.search}>
                     <Search onSearch={handleSearch}/>
                     <div className={styles.search__icon}>
-                        <img src={img__tel} alt="telegram"></img>
-                        <img src={img__vk} alt="vk"></img>
+                        <a href="https://web.telegram.org/k/#@germanweb" target="_blank" rel="noreferrer"><img src={img__tel} alt="telegram"></img></a>
+                        <a href="https://web.telegram.org/k/#@germanweb" target="_blank" rel="noreferrer"><img src={img__vk} alt="vk"></img></a>
                     </div>
                 </div>
               

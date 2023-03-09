@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from'./header.module.scss'
-import logo from "./../../img/лого.png"
+import logo from "./../../img/logo/лого.png"
 import Search from '../../ui/search/Search';
 
 const Header = () => {
@@ -49,11 +49,11 @@ const Header = () => {
           </div>
         
         
-
-            <button className={`hamburger__button ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuClick} >
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+         
+          <button className={`${styles.hamburger__button} ${isMenuOpen ? styles.open : ''}`} onClick={handleMenuClick}>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
             </button>
             {/* <div className={`navbar_burger burger ${ isMenuOpen ? 'open' : ''}`} style={!isMenuOpen ? {display:"none"} : {display:"block"}}>
                 меню

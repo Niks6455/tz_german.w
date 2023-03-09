@@ -1,10 +1,13 @@
 header {
     width: 100%;
     height: 100px;
-    padding: 0 110px;
     box-shadow: 0px 1px 10px 0px #C4C4C4; 
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: #ffffff;
     .navbar{
+        max-width: 1730px;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -33,6 +36,10 @@ header {
                     color: #6B7073;
                     font-size: 14px;
                     text-decoration: none;
+                    transition: color .1s linear ;
+                }
+                :hover{
+                  color: #C4C4C4;
                 }
             }
            
@@ -41,4 +48,44 @@ header {
             margin-right: 90px;
         } 
     }
+ 
 }
+   
+// стили для кнопки
+.hamburger__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hamburger__button{
+    .bar:nth-child(2){
+      width: 18px;
+      margin-left: 15px;
+    }
+    .bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+    background-color: #CD3B31;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  }
+  
+  .hamburger__button.open{
+    .bar:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .bar:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }

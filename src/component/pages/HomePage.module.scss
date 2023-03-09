@@ -1,0 +1,95 @@
+.HomePage{
+    padding-top: 115px;
+    .location{
+        p{
+            color: #C4C4C4;
+            font-size: 14px;
+            span{
+                color: #6B7073;                                       
+            }
+        }
+    }
+
+
+    .about{
+        display: flex;
+        max-width: 1770px;
+        margin-bottom: 120px;
+        .about__photo{
+            width: 65%; 
+            margin-right: 25px;
+            background-image: url(./../img/imgMain/FirstPhoto.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        
+        }
+        .about__text{
+            width: 35%;
+            .about__subtitle{
+                font-size: 14px; 
+                color: #000000;
+            }
+            .download{
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                margin-bottom: 50px;
+                color: #151516;
+                button{
+                    width: 32px;
+                    height: 32px;
+                    background: none;
+                    border: none;
+                    transition: opacity .1 linear;
+                    :hover{
+                        opacity: .8 ;
+                    }
+                
+                }
+            }
+            .last__text{
+                font-size: 14px;
+                color: #000000;
+            }
+        }
+    
+    }
+
+    .list{
+        p{
+        font-size: 24px;
+        color: #151516;
+        }
+        ul{
+            li{
+                color:#CD3B31; 
+                font-size: 14px;
+                span{
+                    color: #151516;
+                }
+            }  
+        }  
+    }
+
+
+    .title{
+        font-size: 48px;
+        color: #151516;
+    }
+    .complicity__info{
+        display: flex;
+       
+        .slider{
+            width: 1000px;
+            img{
+                width: 275px;
+                height: 150px;
+                margin-right: 45px;  
+            }
+        }
+        .list{
+            max-width: 690px;
+        }
+    }
+    
+}

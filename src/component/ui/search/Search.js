@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import styles from "./Search.module.scss"
-import search from "./../../img/search.svg"
+import search from "./../../img/icon/search.svg"
 
 export default function Search(props) {
 
@@ -8,12 +8,12 @@ export default function Search(props) {
 
     function handleInputChange(event) {
         setSearchTerm(event.target.value);
-      }
+    }
     
-      function handleSubmit(event) {
+    function handleSubmit(event) {
         event.preventDefault();
         props.onSearch(searchTerm);
-      }
+    }
 
     return(
         <form onSubmit={handleSubmit} className={styles.search__container}>
