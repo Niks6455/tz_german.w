@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slider = ({ slides }) => {
   return (
-    <div className="slider">
+    <div>
       {slides.map((slide, index) => (
         <img key={index} src={slide} alt={`Slide ${index + 1}`} />
       ))}

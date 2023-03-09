@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from'./header.module.scss'
 import logo from "./../../img/logo/лого.png"
 import Search from '../../ui/search/Search';
+import Boorger from '../boorder/boorger';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,12 +15,14 @@ const Header = () => {
   function handleSearch(searchTerm) {
     console.log("Search term: ", searchTerm);
   }
-
+ 
   return (
-    <header>
-      <nav className={styles.navbar}>
+    
 
-        <div className={styles.navbar__brand}>
+    <header className={`${styles.header} ${ isMenuOpen ? styles.open : ''}`}>
+      <nav className={styles.navbar}>
+      <div className={styles.navbar__inner}>
+         <div className={styles.navbar__brand}>
           <img src={logo} alt="logo"></img>
         </div>
 
@@ -48,19 +52,22 @@ const Header = () => {
               <Search onSearch={handleSearch}/>
           </div>
         
-        
-         
           <button className={`${styles.hamburger__button} ${isMenuOpen ? styles.open : ''}`} onClick={handleMenuClick}>
                 <span className={styles.bar}></span>
                 <span className={styles.bar}></span>
                 <span className={styles.bar}></span>
             </button>
-            {/* <div className={`navbar_burger burger ${ isMenuOpen ? 'open' : ''}`} style={!isMenuOpen ? {display:"none"} : {display:"block"}}>
-                меню
-            </div> */}  
+
+            
+           
         </div>
-        
+      </div>
+       
+       <div className={`${styles.navbar_burger} ${ isMenuOpen ? styles.open : ''}`} style={!isMenuOpen ? {display:"none"} : {display:"block"}}>
+               <Boorger/> 
+          </div> 
       </nav>
+       
     </header>
   );
 };

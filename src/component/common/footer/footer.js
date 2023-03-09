@@ -39,8 +39,8 @@ export default function Footer() {
                     </ul>
                     <ul>
                           <li>  Тендеры </li> 
+                          <li>  Карта ТЦ  </li> 
                           <li>  Политика конфиденциальности </li> 
-                          <li>  Карта ТЦ </li> 
                     </ul> 
                 </div>
                 <div className={styles.search}>
