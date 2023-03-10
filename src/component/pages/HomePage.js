@@ -6,6 +6,8 @@ import img1 from "./../img/imgMain/slider/1.jpg";
 import img2 from "./../img/imgMain/slider/2.jpg";
 import img3 from "./../img/imgMain/slider/3.jpg";
 import img4 from "./../img/imgMain/slider/4.jpg";
+import img5 from "./../img/imgMain/slider/5.jpg";
+import img6 from "./../img/imgMain/slider/6.jpg";
 import Tc__img1 from "./../img/imgMain/photoTc/1.jpg";
 import Tc__img2 from "./../img/imgMain/photoTc/2.jpg";
 import Tc__img3 from "./../img/imgMain/photoTc/3.jpg";
@@ -21,11 +23,11 @@ export default function HomePage() {
         img2,
         img3,
         img4,
-        img2,
+        img5,
+        img6,
         img1,
         img3,
-        img2,
-        img1,
+        img5,
       ];
 
     let [startIndex, setStartIndex] = useState(0);

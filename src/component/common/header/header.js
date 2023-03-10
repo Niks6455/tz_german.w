@@ -40,12 +40,16 @@ const Header = () => {
             </div>
 
             <div className={styles.navbar__end}>
-                <a className={styles.navbar__item} href="/">
-                Контакты
-                </a>
-                <a className={styles.navbar__item} href="/">
+              <div>
+                  <a className={styles.navbar__item} href="/">
+                  Контакты
+                  </a>
+              </div>
+              <div>
+                  <a className={styles.navbar__item} href="/">
                 Карта ТЦ
                 </a>
+              </div>
             </div>
 
           <div className={styles.search}>
